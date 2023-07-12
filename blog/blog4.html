@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+</head>
+
+<body>
+    <header class="my-nav d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom bg-dark">
+        <div class="container d-flex">
+
+            <a href="../index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <span class="fs-4" style="color:white">Tushar Ambawata</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+                <li class="nav-item" aria-current="page"><a href="../blog.html" class="nav-link active">Blog</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Project 1</a></li>
+                        <li><a class="dropdown-item" href="#">Project 2</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">More Projects</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- This navbar is for smaller screens -->
+    <nav class="navbar navbar-dark bg-dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                Tushar Ambawata
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbig offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="../index.html">
+                        Tushar Ambawata
+                    </a>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body mx-3">
+                    <ul class="nav2 mynav2 navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu dropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container my-cont">
+        <div class="row featurette" style="margin: auto;">
+            <div class="blog-cont">
+                <h1 class="blog-head text-center my-3">3 New API's In React 18 Every Developer Should Know</h1>
+                <img src="../img/back4.png" style="width: 100%;" class="card-img-top" alt="...">
+                <p class="my-2">React version 18 was released, and since it is a major new version of React it does, as you would expect, introduce some new, exciting features. Thankfully, though it does not break your existing code, what you learned about react still applies. The code you write still is the same.
+                </p>
+
+                <img src="../img/b41.png" style="width: 100%;" class="card-img-top my-4" alt="...">
+                <p>How To Upgrade Updating, indeed, is a piece of cake. All you have to do is run npm install and install the latest versions of React and React DOM, and then there’s one single change you have to make to your codebase to take advantage of all the new features unlocked and added by React 18. You have to go to your root entry file, typically index.js and then in that file replace the import of ReactDOM from react-dom with this import, where you import from react-dom/client. So that’s a tiny addition you have to make to the import statement and replace the line where you called ReactDOM.render to render the root component into some element in the index.html file with the line below where you call to create a root on React DOM. Instead and you pass the root element in the index.html file to create root and then on this root object which is returned by createRoot, you call render to render the root component into this root element in index.html
+                </p>
+
+                <img src="../img/b42.png" style="width: 100%;" class="card-img-top my-4" alt="...">
+                <p>That’s the only change you have to make your code no other code changes are required, that’s only in one file and only in these two lines of that file. Why You Need To Upgrade Now, Why was this change made? Why was this syntax changed? because by changing to it, you opt in to a new set of features and into a lot of behind the scenes, improvements, and changes that were introduced by React18. The most important new feature introduced by React 18 is a feature called concurrency and that’s actually rather, a concept that is made up of a set of features that were unlocked and added by React 18. Concurrency is all about processing, multiple simultaneous state updates. For example, a list that updates as a user types into an input field. If there is a lot of data to be processed, or the logic for processing the user input is rather complex, the user interface can get laggish and slow, especially on slower devices. In the past prior to React version 18, React always process all state updates in the order in which they were triggered, and the next state update could only be processed, once the previous one was done. With React 18 and the addition of this concurrency concept, you can tell React that a certain state update has a lower priority than another state update, and React is then able to treat the other updates with higher priority.</p>
+
+                <img src="../img/b43.png" style="width: 100%;" class="card-img-top my-4" alt="...">
+                <p>New APIs Now you tell React about a state update that has a lower priority. By using one of the new APIs introduced with React 18.</p>
+
+                <img src="../img/b44.png" style="width: 100%;" class="card-img-top my-4" alt="...">
+                <p>you can use useTransition hook or just startTransition function in places where hooks can’t be used, for example, in class-based components. To tell React that a certain state update process is about to start and that it should not wait for this process to finish before processing other state updates.</p>
+
+                <img src="../img/b45.png" style="width: 100%;" class="card-img-top my-4" alt="...">
+                <p>So the wrap state update will have a lower priority. In other cases, you might have a value that’s generated by some state update, which you maybe don’t directly control, and you can use useDeferredValue to let React, know that an older version of the value should be shown until the new value is ready instead of waiting with the entire component and UI update until the new value is available.
+                </p>
+
+                <img src="../img/b46.png" style="width: 100%;" class="card-img-top my-4" alt="...">
+                <p>Now, these functions and hooks are obviously very new and therefore we will of course have to see which patterns and best practices will emerge based on them. You should definitely not start wrapping all your or state updating calls or all your values with those functions in hooks. Instead, you should use them in niche cases where very complex calculations are going on where the interface is lagging and you have no other way of improving it or you have no other obvious error that could be causing this behavior than these functions and hooks can be helpful. Now React 18 also introduces a couple of other functions which are primarily intended to be used by library authors. These hooks solve specific problems which may be encountered by specific libraries like CSS, JavaScript libraries and they allow the authors of these libraries to work around any problems they might face and utilized new concurrency features unlocked by React 18.</p>
+
+                <img src="../img/b47.png" style="width: 100%;" class="card-img-top my-4" alt="...">
+                <p>As an application developer, you will probably never work with these hooks. Behind The Scenes Improvement Now besides these new APIs and hooks, you also get some changes for existing features. For example, state batching state batching already existed in older versions of React as well, and it’s all about grouping multiple state updating calls together so that they are executed as one state update call instead of multiple calls. This ensures that the components to which the state updates belong is not evaluated and executed multiple times unnecessarily, but that at it instead is only executed once. Now the problem is that with React 17 or older this feature already existed, but it only worked inside of synchronous React event handler functions. if you, for example, had a function that was triggered because a timer expires, state updates performed in that function were not batched together. This changed with React 18 and state batching now always works, no matter where you make your state updates. Improved Suspense Another important change affects the suspense component. The suspense component was already added in the older versions of React, and it can be used to be wrapped around lazily loaded components. Lazy loading simply means that you implement code splitting to only load to code for a certain component when it is needed. This can help with performance, since less code has to be downloaded initially. This is often used in combination with routing. Now you could already use the suspense component to show a fallback component. For example, a loading spinner until the code for the lazily loaded component was downloaded. However, prior to React version 18, you could not used as the suspense component if you also use server side rendering. Now, of course many apps might not use that. But if you did, use it, you were not able to use the suspense component because it would cause an error. With React 18 that’s changed and you can now use this component, as you always were able to use it on the client side on the server side as well.</p>
+
+                <img src="../img/b48.png" style="width: 100%;" class="card-img-top my-2" alt="...">
+                <p class="my-2">as a side note, we will probably see more exciting changes to the suspense component, in the future. Now that React 18 is out because the React team does plan to also make the suspense component to work with data fetching, not just with code fetching for lazily loaded components. The idea is that your components, if they are fetching data, can tell React that they are and tell React when they are done fetching data and then the suspense component, which is somewhere above the data fetching components in the component tree, is able to show a fallback for the components that are fetching data until the data is there. This means that you won’t have to manage the loading state manually inside of your components any more , and you can decouple logic for doing that from your user interface. Now this feature is not there yet but it’s planned to be added in the future and React 18 also lays the foundation for that. Another really exciting feature that isn’t there yet, but which will probably see in the future. Now that React 18 was released, are server components. These are components that are not just pre-rendered on the server, as you can already do it today with server-side-rendering, but instead, these are components that are meant to only execute on the server and yet work seamlessly together with client-side components. Once this feature is added to React it will effectively turn React into the kind of full-stack framework or library which allows you to make server-side with client-side code so that you are not just limited to building user interfaces but you instead can also certain server-side only logic in your React app. This could be used for performing tasks on the server that should not run on the client for security or performance reasons. This feature is not there yet. You can’t yet use these components. It’s an alpha stage only and will probably change a lot over the next months. But we will probably see it in the future. Bit: Build Better UI Component Libraries Say hey to Bit. It’s the #1 tool for component-driven app development. With Bit, you can create any part of your app as a “component” that’s composable and reusable. You and your team can share a toolbox of components to build more apps faster and consistently together. Create and compose “app building blocks”: UI elements, full features, pages, applications, serverless, or micro-services. With any JS stack. Easily share, and reuse components as a team. Quickly update components across projects. Make hard things simple: Monorepos, design systems & micro-frontends.</p>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container my-cont">
+        <div class="row featurette" style="margin: auto;">
+            <div class="more-blog" style="background-color: rgb(205, 203, 203);  border-radius: 10px;">
+                <h1 class="text-dark py-3 px-3">Read More Blogs</h1>
+                <div class="featured-blogs d-flex my-4 justify-content-between">
+                    <div class="card mx-4" style="width: 18rem;">
+                        <img src="../img/b2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Zuckerberg and Pichai thinking on Developers</h5>
+                            <p class="card-text">Zuckerberg and Pichai's Messages Are a Bad Sign for the Developers</p>
+                            <a href="blog2.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="card mx-4" style="width: 18rem;">
+                        <img src="../img/b3.png" style="height: 25vh;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">6 Ways to Stay Focused While Working on Your Startup
+                            </h5>
+                            <p class="card-text">The startup scene is often romanticized as an all-or-nothing endeavor..
+                            </p>
+                            <a href="blog3.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="card mx-4" style="width: 18rem;">
+                        <img src="../img/b4.jpg" style="height: 25vh;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">3 New API's In React 18 Every Developer Should Know</h5>
+                            <p class="card-text">React version 18 was released, and since it is a major new version of
+                                React</p>
+                            <a href="blog4.html" class="btn btn-primary">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <footer class="my-footer d-flex flex-wrap justify-content-between align-items-center py-3 border-top bg-dark">
+
+
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-muted mx-auto foot-name" style="color: white !important;">© 2022 Tushar
+                Ambawata,
+                Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <div class="mx-auto foot-li d-flex">
+                <li class="ms-3"><a class="text-muted" href="https://github.com/TusharAmbawata" target="_blank"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg></a></li>
+
+                <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/tushar-ambawata-3ab830236/"
+                        target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg></a></li>
+
+            </div>
+        </ul>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
